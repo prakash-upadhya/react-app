@@ -21,6 +21,7 @@ jobs:
               run: echo 'Test case running'
 
     deploy:
+        needs: test
         runs-on: ubuntu-latest
         steps:
             - name: Get code
