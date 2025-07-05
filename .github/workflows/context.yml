@@ -1,0 +1,13 @@
+name: Git worflow
+on:
+    push:
+        branches:
+            - dev
+jobs:
+    context-object:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Github context output
+              run: echo '${{github}}'
+
+              
