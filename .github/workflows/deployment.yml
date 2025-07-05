@@ -17,8 +17,6 @@ jobs:
               run: npm install -g vite
             - name: install node modules
               run: npm ci
-            - name: Install Node dependency
-              run: npm run dev
             - name: Run Test
               run: echo 'Test case running'
 
@@ -33,8 +31,6 @@ jobs:
               run: npm install -g vite
             - name: install node modules
               run: npm ci
-            - name: install dependency
-              run: npm run dev
             - name: deployment
               run: echo 'Deploying ...'
 
