@@ -15,6 +15,8 @@ jobs:
                  node-version: 18
             - name: Intall Vite
               run: npm install -g vite
+            - name: install node modules
+              run: npm ci
             - name: Install Node dependency
               run: npm run dev
             - name: Run Test
@@ -29,6 +31,8 @@ jobs:
               uses: actions/setup-node@v4
             - name: Intall Vite
               run: npm install -g vite
+            - name: install node modules
+              run: npm ci
             - name: install dependency
               run: npm run dev
             - name: deployment
